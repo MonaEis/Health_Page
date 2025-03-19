@@ -12,3 +12,9 @@ Xmind 1.25hrs in
 
 Xmind 3hrs in
 ![Xmind 3hrs in](Xmind_3hrs.png)
+
+Xmind Html Done
+![Xmind html done](Xmind_Html_done.png)
+
+Xmind html main detail view
+![Main Detail view](Xmind_Main_done.png)

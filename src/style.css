@@ -1,13 +1,74 @@
+@font-face {
+  font-family: "Urbanist";
+  src: url(./assets/fonts/Urbanist/Urbanist-VariableFont_wght.ttf);
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --green70: #CBEA7B;
+  --green85: #E5F5BD;
+  --green95: #F6FBE9;
+  --green99: #FAFDF2;
+  --darkgreen15: #1A3129;
+  --darkgreen20: #234338;
+  --darkgreen30: ##346454;
+  --grey30: #4C4C4D;
+  --grey60: #98989A;
+}
+
 html {
-  font-size: 10px;
+  font-size: 62.5%;
+  font-family: "Urbanist", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  line-height: 150%;
 }
 
 img {
   max-width: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5.8rem;
+  /* -size 4.2rem for mobile */
+  /* - line height for mobile 120% */
+
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 5rem;
+  /* -size 2.4rem for tablet and mobile */
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 3.4rem;
+  /* -size 2.8rem for tablet */
+  /* -size 1.8 for mobile */
+}
+
+p {
+  font-weight: 500;
+  font-size: 1.8rem;
+  /* -size 1.6rem for tablet */
+  /* -size 1.4rem for mobile */
+}
+
+button {
+  font-weight: 600;
+  font-size: 1.8rem;
+  /* -size 1.6rem for tablet */
+  /* -size 1.4rem for mobile */
+}
+
+label {
+  font-weight: 600;
+  font-size: 1.8rem;
+  /* -size 1.6rem for tablet */
+  /* -size 1.4rem for mobile */
 }

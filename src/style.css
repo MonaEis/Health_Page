@@ -3,32 +3,33 @@
   src: url(./assets/fonts/Urbanist/Urbanist-VariableFont_wght.ttf);
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 :root {
-  --green70: #CBEA7B;
-  --green85: #E5F5BD;
-  --green95: #F6FBE9;
-  --green99: #FAFDF2;
-  --darkgreen15: #1A3129;
+  --green70: #cbea7b;
+  --green85: #e5f5bd;
+  --green95: #f6fbe9;
+  --green99: #fafdf2;
+  --darkgreen15: #1a3129;
   --darkgreen20: #234338;
   --darkgreen30: ##346454;
-  --grey30: #4C4C4D;
-  --grey60: #98989A;
+  --grey30: #4c4c4d;
+  --grey60: #98989a;
   --fs-5-8: clamp(4.2rem, 3.7vw, 5.8rem);
   --fs-5: clamp(2.4rem, 2.5vw, 5rem);
-  --fs-3-4: clamp(1.8rem, 1.39rem + 1.05vw, 3.4rem);
+  --fs-3-4: clamp(1.8rem, 1.6vw, 3.4rem);
+  --fs-2-6: clamp(1.4rem, 1.6vw, 2.6rem);
   --fs-1-8: clamp(1.4rem, 1.6rem, 1.8rem);
-
 }
 
 html {
   font-size: 62.5%;
-  font-family: "Urbanist", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-family: "Urbanist", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
   background-color: var(--green99);
 }
 
@@ -37,57 +38,63 @@ img {
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: var(--fs-5-8);
   line-height: 5rem;
   /* -size 4.2rem for mobile */
   /* - line height for mobile 120% */
-
 }
 
 h2 {
-  font-weight: 700;
-  font-size: var(--fs-5)
+  font-weight: 600;
+  font-size: var(--fs-5);
+  margin-bottom: 1rem;
+  text-align: center;
   /* -size 2.4rem for tablet and mobile */
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: var(--fs-3-4);
   /* -size 2.8rem for tablet */
   /* -size 1.8 for mobile */
 }
 
 p {
-  font-weight: 500;
+  font-weight: 300;
   font-size: var(--fs-1-8);
   line-height: 2rem;
   /* -size 1.6rem for tablet */
   /* -size 1.4rem for mobile */
+}
+
+p.subline {
+  margin-bottom: 8rem;
+  max-width: 100rem;
+  text-align: center;
 }
 
 button {
-  font-weight: 600;
+  font-weight: 400;
   font-size: var(--fs-1-8);
   line-height: 2rem;
   /* -size 1.6rem for tablet */
   /* -size 1.4rem for mobile */
 }
 
-label {
-  font-weight: 600;
+.small-headline {
+  font-weight: 400;
   font-size: var(--fs-1-8);
   line-height: 2rem;
   /* -size 1.6rem for tablet */
   /* -size 1.4rem for mobile */
 }
-
 
 a {
   text-decoration: none;
   color: white;
   font-size: var(--fs-1-8);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .green70 {
@@ -104,7 +111,6 @@ a {
   padding: 1.4rem 2.4rem;
 }
 
-
 /* - Nav */
 nav {
   background-color: var(--darkgreen15);
@@ -114,9 +120,9 @@ nav {
   padding: 1.5rem 16rem;
 }
 
-nav section .nav-upper{
+nav section .nav-upper {
   background-color: var(--darkgreen20);
-  border: solid 1px #2C5446;
+  border: solid 1px #2c5446;
   border-radius: 0.8rem;
   color: white;
   padding: 1.5rem 3rem;
@@ -124,10 +130,14 @@ nav section .nav-upper{
   justify-content: center;
   align-items: center;
   gap: 1vw;
-  
 }
 
-nav section .nav-lower{
+nav section .nav-upper h3 {
+  font-weight: 400;
+  font-size: var(--fs-2-6);
+}
+
+nav section .nav-lower {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -139,8 +149,8 @@ nav section .nav-lower{
   height: 4.5rem;
 }
 
-.navi a{
-  margin-right: 1rem;
+.navi a {
+  margin-right: 2rem;
 }
 
 /* - Header */
@@ -148,14 +158,12 @@ header {
   display: flex;
   /* align-items: center; */
   gap: 4%;
-
+  margin-bottom: 13rem;
 }
-
 
 header .header-img {
   width: 47vw;
 }
-
 
 header article {
   padding-right: 16rem;
@@ -170,7 +178,6 @@ header article h3 {
   text-underline-offset: 2rem;
   margin-bottom: 3.4rem;
 }
-/* # how to gap between line and h3 */
 
 header article h1 {
   margin-bottom: 2rem;
@@ -180,7 +187,7 @@ header article p {
   margin-bottom: 3rem;
 }
 
-.hero-buttons button{
+.hero-buttons button {
   margin-right: 1rem;
   margin-bottom: 4rem;
 }
@@ -194,3 +201,155 @@ header article p {
 .happy-customer .img {
   height: 6.6rem;
 }
+
+/* - Main */
+
+.wrapper {
+  padding: 0 16rem;
+}
+
+/* - Features */
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.features-display {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  margin-bottom: 17.4rem;
+}
+
+.features-display .feature-card {
+  background-color: var(--green95);
+  border-radius: 1.2rem;
+  border: .1rem solid var(--green85);
+  padding: 4rem 5rem;
+}
+
+.features-display .feature-card .feature-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.feature-header .feature-icon {
+  height: 6.8rem;
+  width: 6.8rem;
+  background-color: var(--green70);
+  border-radius: .8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.2rem;
+}
+
+.feature-header .feature-icon img {
+  max-height: 3.5rem;
+  max-width: 3.5rem;
+}
+
+
+.features-display .feature-card p {
+  margin-bottom: 0rem;
+}
+
+
+/* - Our Blog */
+.blogs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  margin-bottom: 17.4rem;
+}
+
+.blog-cards .card {
+  background-color: var(--green95);
+  border-radius: 1.2rem;
+  border: .1rem solid var(--green85);
+  padding: 4rem;
+}
+
+.blog-cards .card img.card-img {
+  object-fit: contain;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.blog-cards .card .small-headline {
+  margin-bottom: .6rem;
+}
+
+.blog-cards .card h3 {
+  margin-bottom: 3rem;
+}
+
+.blog-cards .card p:nth-of-type(2) {
+  margin-bottom: 3rem;
+}
+
+.card-info {
+  background-color: var(--green99);
+  border-radius: 1.2rem;
+  border: 1px solid var(--green85);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.6rem;
+}
+
+.card-info .card-left {
+  display: flex;
+  align-items: center;
+}
+
+.card-info .card-left img {
+  margin-right: 1rem;
+  height: 6rem;
+}
+
+.card .card-info .card-left p {
+  margin-bottom: 0rem;
+}
+
+.card-info .card-right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-info .card-right img{
+  background-color: var(--green95);
+  border-radius: 0.8rem;
+  border: 1px solid var(--green85);
+  padding: 1.8rem;
+}
+
+
+/* - Calories */
+
+
+
+/* - Pricing */
+
+
+
+
+/* - Footer */
+
+
+

@@ -264,70 +264,80 @@
           and activity level. Enter this information to calculate your individual requirements.</p>
 
         <article class="calories-function">
-          <div class="calories-upper">
-            <div class="label-input">
-              <label for="body">Body size (in cm)</label>
-              <input type="number" name="body" id="body">
-            </div>
-            <div class="label-input">
-              <label for="age">Age</label>
-              <input type="number" name="age" id="age">
-            </div>
-          </div>
-          <div class="calories-lower">
-            <div class="label-input">
-              <label for="weight">Weight</label>
-              <input type="number" name="weight" id="weight">
-            </div>
-            <div class="label-input">
-              <label for="activity">Activity</label>
-              <select name="activity" id="activity">
-                <option value="0.95">Schlafen</option>
-                <option value="1.2">Nur sitzend oder Liegend</option>
-                <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in
-                  der Freizeit, z.B. Büroarbeit</option>
-                <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
-                  Studierende, Fließbandarbeitende, Laborfachkräfte, Berufskraftfahrende</option>
-                <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer:innen, Kellner:innen,
-                  Handwerker:innen, Mechaniker:innen</option>
-                <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
-              </select>
-            </div>
+          <form action="">
 
+            <div class="calories-upper">
+              <div class="label-input">
+                <label for="body">Body size (in cm)</label>
+                <input type="number" name="body" id="body">
+              </div>
+              <div class="label-input">
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age">
+              </div>
+            </div>
+            <div class="calories-lower">
+              <div class="label-input">
+                <label for="weight">Weight</label>
+                <input type="number" name="weight" id="weight">
+              </div>
+              <div class="label-input">
+                <label for="activity">Activity</label>
+                <select name="activity" id="activity">
+                  <option value="0.95">Schlafen</option>
+                  <option value="1.2">Nur sitzend oder Liegend</option>
+                  <option selected value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in
+                    der Freizeit, z.B. Büroarbeit</option>
+                  <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
+                    Studierende, Fließbandarbeitende, Laborfachkräfte, Berufskraftfahrende</option>
+                  <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer:innen, Kellner:innen,
+                    Handwerker:innen, Mechaniker:innen</option>
+                  <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+                </select>
+              </div>
+            </div>
+            
             <div class="gender">
-              <p>Gender</p>
-              <div>
-                <input type="radio" name="gender" id="female" value="female">
-                <label for="female">Female</label>
+                <p>Gender</p>
+                <div>
+                  <input checked type="radio" name="gender" id="female" value="female">
+                  <label for="female">Female</label>
 
-                <input type="radio" name="gender" id="male" value="male">
-                <label for="female">Male</label>
-              </div>
-            </div>
-
-            <button class="green70">Calculate</button>
-
-            <div class="output-calories">
-              <div class="kcal">
-                <p>kcal</p>
-                <p>kJ</p>
-              </div>
-              <div class="metabolic">
-                <p>Bascal Metabolic Rate</p>
-                <div class="metabolic-numbers">
-                  <p class="metabolic-kcal">1745.14</p>
-                  <p class="metabolic-kj">7358.18</p>
+                  <input type="radio" name="gender" id="male" value="male">
+                  <label for="female">Male</label>
                 </div>
-              </div>
-              <div class="engergy">
-                <p>Total Daily Energy Expenditure</p>
-                <div class="engergy-numbers">
-                  <p class="engergy-kcal">2636.20</p>
-                  <p class="engergy-kj">110137.30</p>
-                </div>
-              </div>
+                
             </div>
+            <div class="button-div">
+              <button type="submit" class="green70">Calculate</button>
+            </div>
+          </form>
+
+
+          <div class="output-calories">
+                <div class="kcal">
+                  <p></p>
+                  <div class="div-rechts">
+                    <p>kcal</p>
+                    <p>kJ</p>
+                  </div>
+                </div>
+                <div class="metabolic">
+                  <p>Bascal Metabolic Rate</p>
+                  <div class="div-rechts">
+                    <p class="metabolic-kcal">1745.14</p>
+                    <p class="metabolic-kj">7358.18</p>
+                  </div>
+                </div>
+                <div class="engergy">
+                  <p>Total Daily Energy Expenditure</p>
+                  <div class="div-rechts">
+                    <p class="engergy-kcal">2636.20</p>
+                    <p class="engergy-kj">110137.30</p>
+                  </div>
+                </div>
           </div>
+      
 
         </article>
 

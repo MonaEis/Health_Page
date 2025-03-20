@@ -89,6 +89,15 @@ button {
   /* -size 1.4rem for mobile */
 }
 
+label {
+  font-weight: 500;
+  font-size: var(--fs-1-8);
+  color: var(--darkgreen15);
+  line-height: 2rem;
+  /* -size 1.6rem for tablet */
+  /* -size 1.4rem for mobile */
+}
+
 .small-headline {
   font-weight: 400;
   font-size: var(--fs-1-8);
@@ -349,9 +358,117 @@ header article p {
 
 
 /* - Calories */
+.calories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.calories-function {
+  background-color: var(--green95);
+  border: solid 1px var(--green85);
+  border-radius: 1.2rem;
+  padding: 4rem 7rem 5.6rem 7rem;
+}
 
 
+.calories-upper div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
+.calories-lower div{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.calories-upper,
+.calories-lower {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+#activity {
+  width: 100%;
+  height: 5rem;
+  border: 1px solid var(--green85);
+  color: var(--grey60);
+}
+
+.label-input label {
+  margin-bottom: 0.8rem;
+}
+
+.label-input input {
+  font-size: var(--fs-1-8);
+  border: solid 1px var(--green85);
+  height: 5rem;
+  border-radius: 1rem;
+  color: var(--grey60);
+}
+
+.gender {
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+  margin-bottom: 4rem;
+}
+
+.gender label {
+  margin-right: 2rem;
+}
+
+.gender input[type="radio"] {
+  accent-color: var(--green70);
+  border: 0.5px solid var(--grey60);
+
+}
+
+.gender input[type="radio"]:checked {
+  accent-color: var(--green70);
+  border: 0.2px solid rgb(149, 0, 255);
+  /* # how to change the color/appearance of the rb */
+}
+
+form .button-div {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.output-calories {
+  background-color: white;
+  border: solid 1px var(--green70);
+  border-radius: 1rem;
+  padding: 1rem 0;
+  
+  }
+
+
+.output-calories div {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  align-items: center;
+  padding: 1.5rem 3.7rem;
+}
+
+.output-calories .div-rechts {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.output-calories .metabolic {
+  border-top: solid 1px var(--green70);
+
+  
+}
 
 
 /* - Pricing */

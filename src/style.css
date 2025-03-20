@@ -399,6 +399,7 @@ header article p {
   height: 5rem;
   border: 1px solid var(--green85);
   color: var(--grey60);
+  padding-left: 1rem;
 }
 
 .label-input label {
@@ -411,6 +412,7 @@ header article p {
   height: 5rem;
   border-radius: 1rem;
   color: var(--grey60);
+  padding-left: 1rem;
 }
 
 .gender {
@@ -464,8 +466,13 @@ form .button-div {
   justify-content: space-around;
 }
 
+.output-calories .kcal{
+  padding-bottom: 2rem;
+}
+
 .output-calories .metabolic {
   border-top: solid 1px var(--green70);
+  padding-top: 2rem;
 
   
 }

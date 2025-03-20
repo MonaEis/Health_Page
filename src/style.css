@@ -146,6 +146,21 @@ nav section .nav-upper {
   justify-content: center;
   align-items: center;
   gap: 1vw;
+  position: relative;
+  overflow: hidden
+}
+
+nav section .nav-upper .vector-1 {
+  position: absolute;
+  height: 14rem;
+  right: 3rem;
+
+}
+
+nav section .nav-upper .vector-2 {
+  position: absolute;
+  height: 14rem;
+  left: 3rem;
 }
 
 nav section .nav-upper h3 {
@@ -190,6 +205,20 @@ nav section .nav-lower .burger {
   .nav-lower img {
     height: 3.4rem;
   }
+
+
+nav section .nav-upper .vector-1 {
+  position: absolute;
+  height: 7rem;
+  right: 0.1rem;
+
+}
+
+nav section .nav-upper .vector-2 {
+  position: absolute;
+  height: 7rem;
+  left: 0.1rem;
+}
 }
 
 @media screen and (max-width: 390px) {
@@ -212,6 +241,15 @@ nav section .nav-lower .burger {
   nav section .nav-lower .burger{
     display: block;
   }
+  nav section .nav-upper .vector-1 {
+    display: none;
+  
+  }
+  
+  nav section .nav-upper .vector-2 {
+    display: none;
+  }
+  
 
 
 }

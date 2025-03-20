@@ -8,6 +8,11 @@ const activityInput = document.querySelector("#activity") as HTMLSelectElement;
 const genderInput = document.querySelector("#male") as HTMLInputElement;
 console.log(genderInput.value)
 
+let outputMetabolicKcal = document.querySelector(".metabolic-kcal") as HTMLParagraphElement;
+let outputMetabolicKj = document.querySelector(".metabolic-kj") as HTMLParagraphElement;
+let outputEnergyKcal = document.querySelector(".energy-kcal") as HTMLParagraphElement;
+let outputEnergyKj = document.querySelector(".energy-kj") as HTMLParagraphElement;
+
 
 
 
@@ -27,11 +32,25 @@ function calculateCalories(event: Event){
 
         const maleTotal = maleBasalMetabolism * Number(activityInput.value);
         console.log("Test: ", maleTotal)
+        outputMetabolicKcal.innerText = maleBasalMetabolism.toFixed(2);
+        outputMetabolicKj.innerText = (Number(maleBasalMetabolism) * 4.184).toFixed(2);
+
+        outputEnergyKcal.innerText = maleTotal.toFixed(2);
+        outputEnergyKj.innerText = (Number(maleTotal) * 4.184).toFixed(2);
+        
+
     } else {
         const femaleBasalMetabolism = 655.1 +(9.6 * Number(weightInput.value)) + (1.8* Number(bodySizeInput.value)) - (4.7 * Number(ageInput.value))
         const femaleTotal = femaleBasalMetabolism * Number(activityInput.value);
+
+        outputMetabolicKcal.innerText = femaleBasalMetabolism.toFixed(2);
+        outputMetabolicKj.innerText = (Number(femaleBasalMetabolism) * 4.184).toFixed(2);
+
+        outputEnergyKcal.innerText = femaleTotal.toFixed(2);
+        outputEnergyKj.innerText = (Number(femaleTotal) * 4.184).toFixed(2);
     }
 }
+
 
 
 // - Zuerst musst du den Grundumsatz berechnen. Der Grundumsatz wird mithilfe der Harris-Benedict-Formel berechnet.

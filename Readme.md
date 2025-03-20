@@ -18,3 +18,6 @@ Xmind Html Done
 
 Xmind html main detail view
 ![Main Detail view](Xmind_Main_done.png)
+
+Xmind ts works - media queries left
+![Media Queries left](Xmind_tsworks.png)
